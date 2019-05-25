@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0
+
+  font-family: 'Cuprum', "Arial", sans-serif;
+  line-height: 24px;
+  font-weight: normal;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("../img/top background.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header  {
+background-color: #f3f7f9;
+background-image: url("../img/header top background.jpg");
+background-position: 0 0;
+background-repeat: repeat;
+}
+
+.main-header-top {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+  background-image: url("../img/header-top-bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+
+.main-header-top a,
+.main-header-middle a {
+  list-style: none;
+}
+
+.header-tools-button {
+  list-style: none;
+}
+
+.header-tools-button a:hover,
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search:active {
+  background-color: #293449;
+}
+
+.header-tools-button a:active {
+  background-color: #161d29;
+}
+
+.make-order a {
+  color: #ffffff;
+
+  background-color: #63a63e;
+}
+
+.make-order a:hover {
+  background-color: #5fbb2d;
+}
+
+.make-order a:active {
+  background-color: #518534;
+}
+
+.main-header-middle h1 {
+  font-family: 'Cuprum', "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #ee3643;
+}
+
+.login-link a,
+.check-in a {
+  font-size: 21px;
+  line-height: 21px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.login-link a:hover,
+.check-in a:hover {
+  color: #ee3643;
+}
+
+.login-link a:active,
+.check-in a:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-navigation {
+  list-style: none;
+}
+
+.main-header-logo svg {
+  background-color: #ee3643;
+}
+
+.main-header-logo svg:hover {
+  background-color: #ca2c37;
+}
+
+.header-tools-button a {
+  color: #ffffff;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.phone {
+  list-style: none;
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+
+  border: 2px solid white;
+}
+
+.main-navigation {
+  background-color: #32425c;
+  background-image: url("../img/header-top-bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+    font-size: 17px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.site-navigation a:hover {
+  background-color: #161d29;
+}
+
+.site-navigation a:focus {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #32425c;
+}
