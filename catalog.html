@@ -58,7 +58,7 @@
           </li>
           <li class="busket full">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
-              Корзина: 0
+              Корзина: 10
             </a>
           </li>
           <li class="make-order"><a href="#">Оформить заказ</a></li>
@@ -182,6 +182,7 @@
       <h2 class="page-title">ПЕРФОРАТОРЫ</h2>
       <div class="catalog-colums-wrapper">
       <section class="filters">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">ФИЛЬТР ТОВАРОВ</h2>
         <div class="filters-toolbar">
           <h3>ФИЛЬТР:</h3>
@@ -196,13 +197,13 @@
             <div class="range-circle-inside-first"></div>
             <div class="range-circle-inside-second"></div>
           </div>
-          <ul class="scale-sum">
-            <li>0</li>
-            <li>30000</li>
-          </ul>
-         </fieldset>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <div class="scale-sum">
+            <label class="min-sum"><input name="min-sum" type="tel" value="0"></label>
+            <label class="max-sum"><input name="max-sum" type="tel" value="30000"></label>
+          </div>
+
+
+
             <legend>Производители:</legend>
             <ul>
               <li class="filter-option">
@@ -226,8 +227,8 @@
                 <label for="hitachi">HITACHI</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
+
+
             <legend>Питание:</legend>
             <ul>
               <li class="filter-option">

@@ -183,7 +183,6 @@
             <a href="#">для стройки</a>
           </li>
         </ul>
-
         <div class="slider-wrapper">
         <section class="slider">
           <div class="slider-container">
@@ -198,17 +197,14 @@
               <li class="slider-item">
                <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                <img src="img/slider-2full.jpg" width="620px" height="267px" alt="дрели">
+                <button class="button-left" type="button"></button>
+                <button class="button-right" type="button"></button>
               </li>
               <li class="slider-item">
                 <a href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
                 <img src="img/slider-1full.jpg" width="620px" height="267px" alt="перфораторы">
               </li>
             </ul>
-          </div>
-          <!-- слайдер стрелки -->
-          <div class="slider-container-directions">
-
-
           </div>
         </section>
         <ul class="main-info-tags-down">
@@ -417,7 +413,7 @@
           заехав в наш офис:
         </p>
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <a href="#"><img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
+        <a class="contacts-button-map" href="#"><img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
         <a class="contact-us" href="#">Заблудились? НАПИШИТЕ НАМ!</a>
       </section>
       </div>
@@ -519,29 +515,6 @@
       </div>
     </div>
     </footer>
-    <!-- <section class="modal-login">
-      <h2 class="visually-hidden">Введите свои данные</h2>
-      <form class="user" method="post" action="https://echo.htmlacademy.ru">
-        <p>
-          <label>Логин
-          <input class="user-login" type="text" name="login" placeholder="Логин">
-          </label>
-        </p>
-        <p>
-          <label>Пароль
-          <input class="user-password" type="password" name="password" placeholder="Пароль">
-          </label>
-        </p>
-        <p>
-          <label>
-          <input type="checkbox" name="remember">
-          Запомните меня
-          </label>
-        </p>
-          <button type="submit">Войти</button>
-          <button type="button">Закрыть</button>
-      </form>
-    </section>-->
     <section class="modal modal-question">
       <button class="modal-close">Закрыть</button>
       <h2 class="visually-hidden">Задайте вопрос</h2>
@@ -567,8 +540,57 @@
     </section>
     <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="940" height="450" allowfullscreen></iframe>
         <p><img src="img/map1.jpg" width="940" height="450" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
+        <button class="modal-close map-close" type="button">Закрыть</button>
+    </section>
+    <script>
+        var link = document.querySelector(".contact-us");
+
+        var popup = document.querySelector(".modal-question");
+        var close = popup.querySelector(".modal-close");
+
+        link.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popup.classList.add("modal-show");
+  });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+      }
+    }
+  });
+  var mapLink = document.querySelector(".contacts-button-map");
+
+  var mapPopup = document.querySelector(".modal-map");
+  var mapClose = mapPopup.querySelector(".modal-close");
+
+  mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (mapPopup.classList.contains("modal-show")) {
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+    </script>
   </body>
 </html>
